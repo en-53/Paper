@@ -3,12 +3,17 @@ A Survey on Bias and Fairness in Machine Learning(CSUR2021)<br>
 A Review on Fairness in Machine Learning(CSUR2022)<br>
 
 Mitigating Unwanted Biases with Adversarial Learning(AIES 2018)<br>
+在含(X,Y,Z)标签的数据中训练，使用X训练生成Y，同时利用对抗训练对Z保持无偏，解决demographic parity问题<br><br>
 FairGAN: Fairness-aware Generative Adversarial Networks(Big Data2018)<br>
+GAN生成文本的(X,Y,Z)，同时增加判别器使得X,Y与Z无关，Z则是独立分布的随机生成，解决demographic parity问题<br><br>
 Fair Generative Modeling via Weak Supervision(ICML2020)<br>
+构造图像的参考数据集Dref，使用贝叶斯分类器计算数据权重，重加权生成无偏数据集D~Dref，解决属性的imbalance问题<br><br>
 Constructing a Fair Classifier with the Generated Fair Data(AAAI2021)<br>
+使用VAE-GAN，实际上是生成均匀的联合分布(Y,Z)<br><br>
 Fair Attribute Classification through Latent Space De-biasing(CVPR2021)<br>
+在GAN的基础上直接训练从噪声向量到二分类值的线性分类器，依靠线性条件解方程组计算其互补向量的闭式解，以此生成成对数据，解决demographic parity问题<br><br>
 AI recognition of patient race in medical imaging: a modelling study(The Lancet Digital Health2022)<br>
-
+深度学习模型可以在严重损坏的图像数据中识别出患者的种族等信息<br><br>
 
 # Generate
 
