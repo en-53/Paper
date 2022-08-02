@@ -19,22 +19,32 @@ AI recognition of patient race in medical imaging: a modelling study(The Lancet 
 
 ## GAN
 Continual Learning with Deep Generative Replay(NeurIPS2017)<br>
+scholar包含生成器与求解器，对第i个scholar，根据第i-1个scholar的生成数据和当前任务数据训练generator，再由其solver得到的标签与当前数据标签训练solver<br><br>
 Low-shot Learning via Covariance-Preserving Adversarial Augmentation Networks(NeurIPS2018)
+假定了类内方差可以与新类共享，用多个基类组合构造新类生成数据<br><br>
 Robustness of conditional GANs to noisy labels(NeurIPS2018)<br>
+
 Meta-transfer learning for few-shot learning*(CVPR2019)<br>
 Learning to remember: A synaptic plasticity driven framework for continual learning(CVPR2019)<br>
+使用GAN+mask对生成器进行动态网络扩展，将数据信息存储于网络结构中<br><br>
 Task-GAN: Improving Generative Adversarial Network for Image Reconstruction(Machine Learning for Medical Image Reconstruction2019)<br>
+两个鉴别器，真伪+分类任务，L1像素损失+特征损失+分类交叉熵损失<br><br>
 
 ## VAE$AE
 Delta-encoder: an effective sample synthesis method for few-shot object recognition(NeurIPS2018)<br>
+
 EEC: Learning to encode and regenerate images for continual learning(CVPR2021)<br>
+autoencoder编码数据，存储特征（统计信息）+decoder<br><br>
 
 ## Flow
 Masked Autoregressive Flow for Density Estimation(NeurIPS2017)<br>
+将维度数据以条件概率链式法则的形式生成，得到类似的自回归形式，并使得雅可比矩阵为三角阵结构，MAF与IAF实际上为一体两面，区别于自回归的正逆方向<br><br>
 Featurized Density Ratio Estimation(UAI2021)<br>
+使用normalizing flow将两分布变换到高斯分布中进行密度比估计<br><br>
 
 ## Other Generate
 Training Data Generating Networks: Shape Reconstruction via Bi-level Optimization(ICLR2021)<br>
+将每个3D形状表示任务作为一个单独的任务，该3D渲染数据（包括内外标签）作为测试数据：查询集，由网络从2D图像生成训练数据：支撑集<br><br>
 Non-generative Generalized Zero-shot Learning via Task-correlated Disentanglement and Controllable Samples Synthesis(CVPR2022)<br>
 
 
@@ -43,9 +53,13 @@ Non-generative Generalized Zero-shot Learning via Task-correlated Disentanglemen
 
 ## Continual Learning
 iCaRL: Incremental Classifier and Representation Learning(CVPR2017)<br>
+特征提取与分类进行解耦，使用代表数据，分类+蒸馏损失更新特征提取器，中心簇选取旧类样本<br><br>
 Continual Learning with Deep Generative Replay(NeurIPS2017)<br>
+scholar包含生成器与求解器，对第i个scholar，根据第i-1个scholar的生成数据和当前任务数据训练generator，再由其solver得到的标签与当前数据标签训练solver<br><br>
 Learning to remember: A synaptic plasticity driven framework for continual learning(CVPR2019)<br>
+使用GAN+mask对生成器进行动态网络扩展，将数据信息存储于网络结构中<br><br>
 Mnemonics Training: Multi-Class Incremental Learning without Forgetting(CVPR2020)<br>
+
 Semantic Drift Compensation for Class-Incremental Learning*(CVPR2020)<br>
 SS-IL: Separated Softmax for Incremental Learning(CVPR2021)<br>
 EEC: Learning to encode and regenerate images for continual learning(CVPR2021)<br>
