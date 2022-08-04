@@ -59,9 +59,10 @@ scholar包含生成器与求解器，对第i个scholar，根据第i-1个scholar�
 Learning to remember: A synaptic plasticity driven framework for continual learning(CVPR2019)<br>
 使用GAN+mask对生成器进行动态网络扩展，将数据信息存储于网络结构中<br><br>
 Mnemonics Training: Multi-Class Incremental Learning without Forgetting(CVPR2020)<br>
-
+选择最能代表类信息的数据子集<br><br>
 Semantic Drift Compensation for Class-Incremental Learning*(CVPR2020)<br>
 SS-IL: Separated Softmax for Incremental Learning(CVPR2021)<br>
+
 EEC: Learning to encode and regenerate images for continual learning(CVPR2021)<br>
 Instance-Conditioned GAN(NeurIPS2021)<br>
 DualNet: Continual Learning, Fast and Slow*(NeurIPS2021)<br>
